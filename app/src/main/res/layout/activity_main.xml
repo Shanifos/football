@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:id="@+id/scoreboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Steelers"
+                    android:textColor="@color/steeleryellow"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/steeleryellow"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/steelers"
+                    android:onClick="touchDownA"
+                    android:text="@string/touchDown" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/steelers"
+                    android:onClick="fieldGoalA"
+                    android:text="@string/fieldGoal" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/steelers"
+                    android:onClick="tryKickA"
+                    android:text="@string/tryKick" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="tryRunA"
+                    style="@style/steelers"
+                    android:text="@string/tryRun" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/steelers"
+                    android:onClick="safetyA"
+                    android:text="@string/safety" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Patroits"
+                    android:textColor="@color/pats"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pats"
+                    android:text="0"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Patriots"
+                    android:onClick="touchDownB"
+                    android:text="@string/touchDown" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Patriots"
+                    android:onClick="fieldGoalB"
+                    android:text="@string/fieldGoal" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Patriots"
+                    android:onClick="tryKickB"
+                    android:text="@string/tryKick" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Patriots"
+                    android:onClick="tryRunB"
+                    android:text="@string/tryRun" />
+
+                <Button
+                    android:id="@+id/safetyb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Patriots"
+                    android:onClick="safetyB"
+                    android:text="@string/safety" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#344153"
+            android:onClick="resetScore"
+            android:text="reset"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    </RelativeLayout>

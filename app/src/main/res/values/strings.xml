@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Football Score</string>
+    <string name="touchDown">Touchdown</string>
+    <string name="fieldGoal">Field Goal</string>
+    <string name="tryKick">Try Kick</string>
+    <string name="tryRun">Try Run</string>
+    <string name="safety">Safety</string>
+</resources>
